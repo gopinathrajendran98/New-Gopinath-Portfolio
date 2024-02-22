@@ -1,0 +1,31 @@
+
+
+.skillContainer{
+    display: inline-block;
+    justify-content: flex-start;
+    max-width: 500px;
+    width: 600px;
+
+}
+
+.skillContainer h1{
+    text-align: center;
+    color: rgb(239, 20, 224);
+}
+
+.skillContainer_text{
+    color: rgb(167, 36, 211);
+    flex: 0.6rem;
+    text-align: left;   
+}
+
+.back-container{
+    display: inline-block;
+    text-align: right;
+    width:600px ;
+}
+
+.back-container h1{
+    text-align: center;
+    color: rgb(142, 199, 44);
+}
