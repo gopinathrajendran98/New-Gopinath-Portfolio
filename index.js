@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './components/Navbar/Navbar'
+import Timing from './Timing';
+import State from './hooks/State';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar/>
+    <State/>
+   <Timing/>
     <App />
+   
   </React.StrictMode>
 );
 
