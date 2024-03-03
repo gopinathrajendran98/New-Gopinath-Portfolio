@@ -1,36 +1,24 @@
-
 import './App.css';
-import React,{useState,useEffect} from 'react';
+import React from 'react';
+import {BrowserRouter ,Routes,Route} from 'react-router-dom'
+import Skills from './Router/Skills'
+import Project from './Router/Project'
+import Contact from './Router/Contact/Contact'
+import Home from './components/Home'
 
-function App() {
+const App = () =>{
+  return(
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/Skills" element={<Skills/>}/>
+       <Route path="/Project" element={<Project/>}/>
+       <Route path="/Contact" element={<Contact/>}/>
+       </Routes>
+    </BrowserRouter>
 
-  const[count,setCount]=useState(10);
+  )
 
-
-
-    
-
-  // we can use the array are don't want it just optional
-
-  function increase(){
-    setCount(count + 1)
-  }
-
-  function decrease(){
-    setCount(count-1)
-  }
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Use the State value {count}</h2>
-        <button onClick={increase}>+</button>
-        <button onClick={decrease}>-</button>
-       
-      
-      </header>
-    </div>
-  );
 }
 
 export default App;
