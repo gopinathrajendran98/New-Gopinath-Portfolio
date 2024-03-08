@@ -6,6 +6,8 @@ import Project from './Router/Project'
 import Contact from './Router/Contact/Contact'
 import Home from './components/Home'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const App = () =>{
   return(
     <BrowserRouter>
